@@ -1,4 +1,4 @@
-package kr.ac.hansung.cse;
+package kr.ac.hansung.cse.controller;
 
 import java.util.Locale;
 
@@ -15,6 +15,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+	//public String home() {
 		
 		return "home";
 	}
