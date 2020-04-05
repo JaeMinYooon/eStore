@@ -1,11 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-
 <div class="container-wrapper">
 	<div class="container">
-		<h2>All Products</h2>
-		<p>착한 가격으로 상품을 살펴보세요.</p>
+		<h2>Product Inventory</h2>
+		<p>제품 재고 현황입니다.</p>
 		<table class="table table-striped">
 			<thead>
 				<tr class="bg-success">
@@ -15,6 +14,7 @@
 					<th>Manufacturer</th>
 					<th>UnitInStock</th>
 					<th>Description</th>
+					<th> </th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,10 +26,21 @@
 						<td>${product.manufacturer}</td>
 						<td>${product.unitInStock}</td>
 						<td>${product.description}</td>
+						<td> <a href="<c:url value="/admin/productInventory/deleteProduct/${product.id}"/>">
+							<i class="fas fa-times-circle"></i> </a> 
+						
+							<a href="<c:url value="/admin/productInventory/updateProduct/${product.id}"/>">
+							<i class="fas fa-edit"></i> </a>
+						</td>
+					
+						
 					</tr>
 				</c:forEach>
 
 			</tbody>
 		</table>
+
+		<a href="<c:url value="/admin/productInventory/addProduct"/>" class="btn btn-primary"> Add Product </a>
+
 	</div>
 </div>

@@ -12,4 +12,4 @@
 		&middot; <a href="#">Terms</a>
 	</p>
 </footer>
->
+

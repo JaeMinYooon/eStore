@@ -20,6 +20,9 @@
 		<!-- Favicons -->
 	<link rel="icon" href="<c:url value="/resources/favicon.ico"/>">
 	
+	<link href="<c:url value="/resources/fontAwesome/css/all.css"/>" rel="stylesheet"> <!--load all styles -->
+	
+	
 	<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
