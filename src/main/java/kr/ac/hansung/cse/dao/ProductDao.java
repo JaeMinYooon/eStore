@@ -11,7 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import kr.ac.hansung.cse.model.Product;
 
-// jdbc -> spring jdbc -> hibernate
+// jdbc -> spring jdbc -> hibernate 
+//spring과정 다 지우셔서 남기긴함 jdbc는 ... 몰겠음
 
 @Repository
 @Transactional
