@@ -64,8 +64,8 @@ public class AdminController {
 			return "addProduct";
 		}
 		
-		if (!productService.addProduct(product))
-			System.out.println("Adding Product cannot be done");
+		System.out.println(product);
+		productService.addProduct(product);
 
 		return "redirect:/admin/productInventory";
 
@@ -74,8 +74,8 @@ public class AdminController {
 	@RequestMapping(value = "/productInventory/deleteProduct/{id}", method = RequestMethod.GET)
 	public String deleteProduct(@PathVariable int id) {
 
-		if (!productService.deleteProduct(id))
-			System.out.println("Deleting Product cannot be done");
+		Product product = productService.getProductById(id);
+		productService.deleteProduct(product);
 
 		return "redirect:/admin/productInventory";
 	}
@@ -83,7 +83,7 @@ public class AdminController {
 	@RequestMapping(value = "/productInventory/updateProduct/{id}", method = RequestMethod.GET)
 	public String updateProduct(@PathVariable int id, Model model) {
 
-		Product product = productService.getProdcutById(id);
+		Product product = productService.getProductById(id);
 
 		model.addAttribute("product", product);
 
@@ -103,8 +103,7 @@ public class AdminController {
 			return "updateProduct";
 		}
 		
-		if (!productService.updateProduct(product))
-			System.out.println("Updating Product cannot be done");
+		productService.updateProduct(product);
 
 		return "redirect:/admin/productInventory";
 
