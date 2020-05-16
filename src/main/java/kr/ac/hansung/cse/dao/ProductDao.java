@@ -152,5 +152,11 @@ public class ProductDao {
 		 * price, manufacturer, unitInStock, description, id }) == 1);
 		 */
 	}
-
+	
+	public void infoProduct(Product product) {
+		Session session = sessionFactory.getCurrentSession();
+		session.saveOrUpdate(product);
+		session.flush();
+	}
+	
 }

@@ -4,6 +4,7 @@
 
 <!-- FOOTER -->
 <footer class="container">
+	<br/>
 	<p class="float-right">
 		<a href="#">Back to top</a>
 	</p>

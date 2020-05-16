@@ -31,6 +31,7 @@
 						
 							<a href="<c:url value="/admin/productInventory/updateProduct/${product.id}"/>">
 							<i class="fas fa-edit"></i> </a>
+							
 						</td>
 					
 						

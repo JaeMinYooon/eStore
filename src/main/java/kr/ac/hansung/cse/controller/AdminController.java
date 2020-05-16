@@ -89,7 +89,8 @@ public class AdminController {
 
 		return "updateProduct";
 	}
-
+	
+	
 	@RequestMapping(value = "/productInventory/updateProduct", method = RequestMethod.POST)
 	public String updateProductPost(@Valid Product product, BindingResult result) {
 
