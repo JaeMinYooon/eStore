@@ -47,4 +47,9 @@
  	<put-attribute name="title" value="Detail Product Page" />
     <put-attribute name="body" value="/WEB-INF/views/viewProduct.jsp" />
   </definition>
+  
+  <definition name="cart" extends="base">
+ 	<put-attribute name="title" value="Cart Information Page" />
+    <put-attribute name="body" value="/WEB-INF/views/cart.jsp" />
+  </definition>
 </tiles-definitions>

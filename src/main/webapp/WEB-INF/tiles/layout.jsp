@@ -14,14 +14,17 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
 
-		<!-- Bootstrap core CSS -->
+	<!-- Bootstrap core CSS -->
 	<link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		<!-- Favicons -->
+	<!-- Favicons -->
 	<link rel="icon" href="<c:url value="/resources/favicon.ico"/>">
 	
+	<!-- FontAwesome -->
 	<link href="<c:url value="/resources/fontAwesome/css/all.css"/>" rel="stylesheet"> <!--load all styles -->
 	
+	<!-- AngularJs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
 	
 	<style>
       .bd-placeholder-img {
